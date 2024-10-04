@@ -21,7 +21,7 @@ function Form({ callback }) {
 
         // Si los campos están llenos, realizar la solicitud
         try {
-            const response = await fetch(`http://localhost:4000/v1/signos/login`, {
+            const response = await fetch(`https://horoscopoback.vercel.app/v1/signos/login`, {
                 method: 'POST',
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ username, password })
